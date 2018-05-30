@@ -11,16 +11,4 @@ void initDek(char deck[8][8]){
         }
     }
 }
-void  printDek ( char deck [8][8]){
-for ( int i=0; i <8; ++i){
-for (int j=0; j<8;++j){
-printf("%c ",deck[i][j]);
-}
-printf("\n");
-}
-}
-int main(){
-    char deck[8][8];
-    initDek(deck);
-    printDek(deck);
-}
+
