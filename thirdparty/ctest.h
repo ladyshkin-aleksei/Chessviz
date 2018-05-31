@@ -526,3 +526,8 @@ int ctest_main(int argc, const char *argv[])
     snprintf(results, sizeof(results), "RESULTS: %d tests (%d ok, %d failed, %d skipped) ran in %" PRIu64 " ms", total, num_ok, num_fail, num_skip, (t2 - t1)/1000);
     color_print(color, results);
 return num_fail;
+}
+
+#endif
+
+#endif
