@@ -1,7 +1,7 @@
 #define CTEST_MAIN
 
 #include <board_read.h>
-#include <chessviz.h>
+#include <Chessviz.h>
 #include <board.h>
 
 #include <ctest.h>

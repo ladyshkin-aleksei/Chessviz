@@ -10,7 +10,7 @@ default: bin/chess.exe
 test: bin/chess_test.exe
 	$<
 
-bin/chess_test.exe: build/test/main_test.o build/src/board_print_plain.o build/src/chessviz.o build/src/board.o build/src/board_read.o
+bin/chess_test.exe: build/test/main_test.o build/src/board_print_plain.o build/src/Chessviz.o build/src/board.o build/src/board_read.o
 	mkdir -p bin
 	$(CC) $^ -o $@ $(CFLAGS)
 
@@ -18,7 +18,7 @@ build/test/main_test.o: test/main.c thirdparty/ctest.h src/board.h
 	mkdir -p build/test
 	$(OBJ) -I thirdparty -I src
 
-bin/chess.exe: build/src/main.o build/src/board_print_plain.o build/src/chessviz.o build/src/board.o build/src/board_read.o
+bin/chess.exe: build/src/main.o build/src/board_print_plain.o build/src/Chessviz.o build/src/board.o build/src/board_read.o
 	mkdir -p bin
 	$(CC) $^ -o $@ $(CFLAGS)
 
@@ -30,7 +30,7 @@ build/src/board_print_plain.o: src/board_print_plain.c src/board_print_plain.h
 	$(MKDIR_BUILD)
 	$(OBJ)
 
-build/src/chessviz.o: src/chessviz.c src/chessviz.h
+build/src/Chessviz.o: src/Chessviz.c src/Chessviz.h
 	$(MKDIR_BUILD)
 	$(OBJ)
 
